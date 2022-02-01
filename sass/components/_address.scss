@@ -1,0 +1,26 @@
+.address {
+  @extend %list;
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.address__item:not(:first-child) {
+  margin-top: 9px;
+}
+.address__link {
+  text-decoration: none;
+  color: $dark-bg-text-color;
+
+  transition: color $transition-time $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &--wiht-transparency {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

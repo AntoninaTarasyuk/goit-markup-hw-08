@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bg-color;
+}
+.footer__join {
+  margin-left: 70px;
+  margin-right: 93px;
+}
+.footer__title {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $dark-bg-text-color;
+  text-transform: uppercase;
+}

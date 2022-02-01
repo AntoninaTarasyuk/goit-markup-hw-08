@@ -1,0 +1,25 @@
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: $secondary-font;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  &--footer {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+.logo__decor {
+  color: $title-text-color;
+  &--footer {
+    color: $dark-bg-text-color;
+  }
+}
