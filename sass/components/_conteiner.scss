@@ -3,15 +3,19 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: royalblue;
 
-  @media screen and (min-width: 480px) {
+  @media (min-width: 480px) {
     width: 480px;
+    background-color: greenyellow;
   }
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
+  @media (min-width: 768px) {
+    width: 768px;
+    background-color: hotpink;
   }
 }
+
+// @media (min-width: 480px) {
+//   .container {
+//     background-color: greenyellow;
+//   }
+// }
