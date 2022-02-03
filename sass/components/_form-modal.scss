@@ -71,9 +71,16 @@
   margin-bottom: 30px;
 }
 .agreement__lable {
-  font-size: 14px;
-  line-height: 1.71;
   margin-left: 7px;
+
+  @media screen and(max-width: 1999px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .agreement__icon {
   width: 16px;

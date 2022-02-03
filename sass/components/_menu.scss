@@ -1,0 +1,48 @@
+.menu-conteiner {
+  padding: 48px 40px;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-align: center;
+  background-color: palegoldenrod;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .cross-icon {
+  display: none;
+}
+.menu-button.is-open .cross-icon {
+  display: block;
+}
+.menu-button.is-open .menu-icon {
+  display: none;
+}
