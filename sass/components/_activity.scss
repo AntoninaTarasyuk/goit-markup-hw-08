@@ -1,5 +1,6 @@
 .activity {
   @extend %list;
+  display: flex;
 }
 .activity__item {
   position: relative;
