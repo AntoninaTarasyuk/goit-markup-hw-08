@@ -2,10 +2,23 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $footer-bg-color;
+
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+  }
 }
 .footer__join {
-  margin-left: 70px;
-  margin-right: 93px;
+  @media screen and(min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    margin-bottom: 102px;
+    margin-left: 165px;
+  }
+  @media screen and(max-width: 767px) {
+    margin: 60px 0px;
+  }
 }
 .footer__title {
   margin: 0 0 20px 0;

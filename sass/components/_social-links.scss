@@ -1,5 +1,6 @@
 .social-links {
   @extend %list;
+  display: flex;
   justify-content: center;
 }
 .social-links__item:not(:first-child) {
