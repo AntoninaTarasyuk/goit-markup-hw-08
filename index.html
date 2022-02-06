@@ -15,9 +15,9 @@
     <div class="container container--header">
       <a href="./index.html" class="logo">Web<span class="logo__decor">Studio</span></a>
       <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-conteiner" data-menu-button>
-        <svg class="cross-icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
-          <use href="./images/sprite.svg#close_40px"></use>
-          <use href="./images/sprite.svg#menu_40px"></use>
+        <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+          <use class="cross-icon" href="./images/sprite.svg#close_40px"></use>
+          <use class="menu-icon" href="./images/sprite.svg#menu_40px"></use>
         </svg>
       </button>
       <div class="menu-conteiner">
@@ -443,7 +443,7 @@
         <div class="agreement">
           <label class="agreement__field">
             <input class="agreement__checkbox" type="checkbox" name="checkbox">
-            <svg class="agreement__icon" width="16px" height="15px">
+            <svg class="agreement__icon" width="11px" height="8px">
               <use href="./images/sprite.svg#check-box""></use>
             </svg>
             <span class="agreement__lable">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
@@ -454,5 +454,6 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>
