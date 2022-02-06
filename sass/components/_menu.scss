@@ -1,23 +1,18 @@
 .menu-conteiner {
   padding: 48px 40px;
-
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  letter-spacing: 0.02em;
-  text-align: center;
-  background-color: palegoldenrod;
+  background-color: $primary-bg-color;
 
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 
-    // &.is-open {
-    //   display: block;
-    // }
+    &.is-open {
+      display: block;
+    }
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -32,6 +27,16 @@
   border: none;
   background-color: transparent;
 
+  &:focus {
+    fill: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 2;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }

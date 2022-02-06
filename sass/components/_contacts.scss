@@ -1,15 +1,21 @@
 .contacts {
   @extend %list;
-  margin-left: auto;
+  @media screen and(min-width: 1200px) {
+    margin-left: auto;
+  }
+  @media screen and(max-width: 767px) {
+    margin-top: 300px;
+    margin-bottom: 64px;
+  }
 }
 .contacts__item:not(:first-child) {
-  margin-left: 50px;
+  @media screen and(min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -22,6 +28,15 @@
   &:focus,
   &:hover {
     color: $accent-color;
+  }
+
+  @media screen and(max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and(min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contacts__icon {
