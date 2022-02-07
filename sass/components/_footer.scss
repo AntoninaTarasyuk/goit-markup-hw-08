@@ -8,16 +8,13 @@
   }
 }
 .footer__join {
-  @media screen and(min-width: 1200px) {
-    margin-left: 70px;
-    margin-right: 93px;
-  }
-  @media screen and(min-width: 768px) and(max-width: 1199px) {
-    margin-bottom: 102px;
-    margin-left: 165px;
-  }
   @media screen and(max-width: 767px) {
-    margin: 60px 0px;
+    margin-top: 60px;
+  }
+}
+.footer__subscribe {
+  @media screen and(max-width: 1199px) {
+    margin-top: 60px;
   }
 }
 .footer__title {

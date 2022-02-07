@@ -6,8 +6,8 @@
   @media screen and(max-width: 767px) {
     display: block;
   }
-  @media screen and(min-width: 1200px) {
-    mmargin-left: 93px;
+  @media screen and(min-width: 768px) {
+    display: flex;
   }
 }
 .site-nav__item:not(:first-child) {
@@ -19,8 +19,6 @@
   display: block;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: $title-text-color;
   text-decoration: none;
@@ -35,10 +33,14 @@
   @media screen and(max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
+    font-size: 40px;
+    line-height: 1.18;
   }
   @media screen and(min-width: 768px) {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 .site-nav__link--current {

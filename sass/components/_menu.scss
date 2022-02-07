@@ -1,9 +1,11 @@
+// .menu-conteiner позиционируется относительно .container--header
 .menu-conteiner {
   padding: 48px 40px;
   background-color: $primary-bg-color;
 
   @media screen and (max-width: 767px) {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -11,13 +13,22 @@
     z-index: 1;
 
     &.is-open {
+      opacity: 1;
+      pointer-events: initial;
       display: block;
     }
+    transition: opacity $transition-time $time-function;
   }
   @media screen and (min-width: 768px) {
+    padding: 0;
+    margin-left: 88px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 .menu-button {
@@ -27,7 +38,7 @@
   border: none;
   background-color: transparent;
 
-  &:focus {
+  &:hover {
     fill: $accent-color;
   }
 
