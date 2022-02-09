@@ -133,15 +133,21 @@
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="activity">
           <li class="activity__item">
-            <img class="image" src="./images/comp.jpeg" alt="Человек с компьютером" width="370">
+            <img srcset="./images/activity/comp.jpeg 1x, ./images/activity/comp-2x.jpeg 2x"
+              src="./images/activity/comp.jpeg"
+              alt="Фото человек с компьютером" width="370">
             <h3 class="activity__title">Десктопные приложения</h3>
           </li>
           <li class="activity__item">
-            <img class="image" src="./images/tel.jpeg" alt="Человек с телефоном" width="370">
+            <img srcset="./images/activity/tel.jpeg 1x, ./images/activity/tel-2x.jpeg 2x"
+              src="./images/activity/tel.jpeg"
+              alt="Фото человека с телефоном" width="370">
             <h3 class="activity__title">Мобильные приложения</h3>
           </li>
           <li class="activity__item">
-            <img class="image" src="./images/tablet.jpeg" alt="Человек с планшетом" width="370">
+            <img srcset="./images/activity/tablet.jpeg 1x, ./images/activity/tablet-2x.jpeg 2x"
+              src="./images/activity/tablet.jpeg"
+              alt="Фото человека с планшетом" width="370">
             <h3 class="activity__title">Дизайнерские решения</h3>
           </li>
         </ul>
@@ -153,7 +159,11 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="person">
           <li class="person__item">
-            <img class="image" src="./images/igor.jpeg" alt="Фотография Игорь Демьяненко" width="270">
+            <img srcset="./images/team/igor-270.jpeg 270w, ./images/team/igor-354.jpeg 354w, ./images/team/igor-450.jpeg 450w,
+                          ./images/team/igor-540.jpeg 540w, ./images/team/igor-708.jpeg 708w, ./images/team/igor-900.jpeg 900w"
+              src="./images/team/igor-450.jpeg" 
+              alt="Фотография Игорь Демьяненко"
+              sizes="(min-width: 1200px) 20vw, (min-width: 768px) 40vw, 100vw">
             <div class="person__discription">
               <h3 class="person__name">Игорь Демьяненко</h3>
               <p lang="en" class="person__proffesion">Product Designer</p>
@@ -190,7 +200,11 @@
             </div>
           </li>
           <li class="person__item">
-            <img class="image" src="./images/olga.jpeg" alt="Фотография Ольга Репина" width="270">
+            <img srcset="./images/team/olga-270.jpeg 270w, ./images/team/olga-354.jpeg 354w, ./images/team/olga-450.jpeg 450w,
+                        ./images/team/olga-540.jpeg 540w, ./images/team/olga-708.jpeg 708w, ./images/team/olga-900.jpeg 900w"
+              src="./images/team/olga-450.jpeg"
+              alt="Фотография Ольга Репина"
+              sizes="(min-width: 1200px) 20vw, (min-width: 768px) 40vw, 100vw">
             <div class="person__discription">
               <h3 class="person__name">Ольга Репина</h3>
               <p lang="en" class="person__proffesion">Frontend Developer</p>
@@ -227,7 +241,12 @@
             </div>
           </li>
           <li class="person__item">
-            <img class="image" src="./images/nikolaj.jpeg" alt="Фотография Николай Тарасов" width="270">
+            <img
+              srcset="./images/team/nikolaj-270.jpeg 270w, ./images/team/nikolaj-354.jpeg 354w, ./images/team/nikolaj-450.jpeg 450w,
+                      ./images/team/nikolaj-540.jpeg 540w, ./images/team/nikolaj-708.jpeg 708w, ./images/team/nikolaj-900.jpeg 900w"
+              src="./images/team/nikolaj-450.jpeg"
+              alt="Фотография Николай Тарасов"
+              sizes="(min-width: 1200px) 20vw, (min-width: 768px) 45vw, 100vw">
             <div class="person__discription">
               <h3 class="person__name">Николай Тарасов</h3>
               <p lang="en" class="person__proffesion">Marketing</p>
@@ -264,7 +283,12 @@
             </div>
           </li>
           <li class="person__item">
-            <img class="image" src="./images/mikhail.jpeg" alt="Фотография Михаил Ермаков" width="270">
+            <img
+              srcset="./images/team/mikhail-270.jpeg 270w, ./images/team/mikhail-354.jpeg 354w, ./images/team/mikhail-450.jpeg 450w,
+                      ./images/team/mikhail-540.jpeg 540w, ./images/team/mikhail-708.jpeg 708w, ./images/team/mikhail-900.jpeg 900w"
+              src="./images/team/mikhail-450.jpeg"
+              alt="Фотография Михаил Ермаков"
+              sizes="(min-width: 1200px) 20vw, (min-width: 768px) 45vw, 100vw">
             <div class="person__discription">
               <h3 class="person__name">Михаил Ермаков</h3>
               <p lang="en" class="person__proffesion">UI Designer</p>
@@ -445,7 +469,7 @@
         </label>
         <label class="form__field">
           <span class="form__label">Почта</span>
-          <input class="form__input" type="email" name="mail">
+          <input class="form__input" type="email" name="mail" required>
           <svg class="form__icon" width="18px" height="18px">
             <use href="./images/sprite.svg#email"></use>
           </svg>
@@ -457,7 +481,7 @@
         <div class="agreement">
           <label class="agreement__field">
             <input class="agreement__checkbox" type="checkbox" name="checkbox">
-            <svg class="agreement__icon" width="11px" height="8px">
+            <svg class="agreement__icon" width="16px" height="15px">
               <use href="./images/sprite.svg#check-box""></use>
             </svg>
             <span class="agreement__lable">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>

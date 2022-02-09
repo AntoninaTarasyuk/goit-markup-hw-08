@@ -88,13 +88,16 @@
   border: 2px solid $title-text-color;
   border-radius: 3px;
   background-color: $primary-bg-color;
+  fill: transparent;
 
   transition: border-color $transition-time $time-function,
-    background-color $transition-time $time-function;
+    background-color $transition-time $time-function,
+    fill $transition-time $time-function;
 }
 .agreement__checkbox:checked ~ .agreement__icon {
   border-color: $accent-color;
   background-color: $accent-color;
+  fill: #ffffff;
 }
 .agreement__checkbox {
   position: absolute;

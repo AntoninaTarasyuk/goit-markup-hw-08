@@ -44,6 +44,12 @@
       color: $accent-color;
     }
   }
+  @media screen and(max-width: 376px) {
+    &--phone {
+      font-size: 26px;
+      line-height: 1.18;
+    }
+  }
   @media screen and(min-width: 768px) and(max-width: 1199px) {
     padding-top: 5px;
     padding-bottom: 5px;

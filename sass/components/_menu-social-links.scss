@@ -33,4 +33,13 @@
   letter-spacing: 0.02em;
   color: $accent-color;
   text-decoration: none;
+  @media screen and(max-width: 350px) {
+    font-size: 12px;
+  }
+  @media screen and(min-width: 351px) {
+    font-size: 14px;
+  }
+  @media screen and(min-width: 377px) {
+    font-size: 16px;
+  }
 }
