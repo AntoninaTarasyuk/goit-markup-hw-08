@@ -77,14 +77,17 @@
     font-size: 12px;
     line-height: 1.17;
   }
+  @media screen and(max-width: 481px) {
+    font-size: 11px;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
   }
 }
 .agreement__icon {
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
   border: 2px solid $title-text-color;
   border-radius: 3px;
   background-color: $primary-bg-color;

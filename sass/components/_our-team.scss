@@ -34,14 +34,7 @@
     }
   }
 }
-.person__item img {
-  @media screen and(min-width: 768px) {
-    height: 374px;
-  }
-  @media screen and(min-width: 1200px) {
-    height: 260px;
-  }
-}
+
 .person__discription {
   padding-top: 30px;
   padding-bottom: 30px;

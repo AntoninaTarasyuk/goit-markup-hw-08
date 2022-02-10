@@ -10,6 +10,8 @@
   opacity: 1;
   transition: opacity $transition-time $time-function;
 
+  z-index: 7;
+
   @media screen and (max-width: 1199px) {
     padding: 94px 15px 93px 15px;
   }
@@ -29,7 +31,12 @@
   transform: scale(1);
   transition: transform $transition-time $time-function;
 
-  @media screen and (max-width: 1199px) {
+  z-index: 8;
+
+  @media screen and (max-width: 767px) {
+    max-width: 452px;
+  }
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
     width: 452px;
   }
   @media screen and (min-width: 1200px) {
