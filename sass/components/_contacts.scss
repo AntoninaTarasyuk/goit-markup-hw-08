@@ -9,7 +9,8 @@
   }
   @media screen and(max-width: 767px) {
     flex-flow: column-reverse;
-    margin-top: 300px;
+    margin-top: auto;
+    flex-grow: 1;
     margin-bottom: 64px;
   }
 }
@@ -46,7 +47,7 @@
   }
   @media screen and(max-width: 376px) {
     &--phone {
-      font-size: 26px;
+      font-size: 28px;
     }
   }
   @media screen and(min-width: 768px) and(max-width: 1199px) {
