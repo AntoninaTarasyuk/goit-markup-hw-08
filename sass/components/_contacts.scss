@@ -19,7 +19,7 @@
   }
 }
 .contacts__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -47,7 +47,6 @@
   @media screen and(max-width: 376px) {
     &--phone {
       font-size: 26px;
-      line-height: 1.18;
     }
   }
   @media screen and(min-width: 768px) and(max-width: 1199px) {

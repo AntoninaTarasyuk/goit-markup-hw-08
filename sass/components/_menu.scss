@@ -38,7 +38,10 @@
   border: none;
   background-color: transparent;
 
-  &:hover {
+  transition: color $transition-time $time-function;
+
+  .no-touch &:hover,
+  .touch &:active {
     fill: $accent-color;
   }
 
