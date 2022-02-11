@@ -619,9 +619,6 @@ img {
         -ms-flex-flow: column-reverse;
             flex-flow: column-reverse;
     margin-top: auto;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     margin-bottom: 64px;
   }
 }
