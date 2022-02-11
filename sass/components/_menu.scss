@@ -40,8 +40,8 @@
 
   transition: color $transition-time $time-function;
 
-  .no-touch &:hover,
-  .touch &:active {
+  &:hover,
+  &:focus {
     fill: $accent-color;
   }
 
