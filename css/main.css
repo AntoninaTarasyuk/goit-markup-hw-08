@@ -413,9 +413,6 @@ img {
   color: #2196f3;
   text-decoration: none;
 }
-.logo:hover, .logo:focus {
-  text-decoration: none;
-}
 .logo--footer {
   margin-bottom: 20px;
 }
@@ -1356,7 +1353,7 @@ img {
 }
 @media screen and (max-width: 479px) {
   .subscribe-form__input {
-    width: calc(100% - 30px);
+    width: 100%;
   }
 }
 
