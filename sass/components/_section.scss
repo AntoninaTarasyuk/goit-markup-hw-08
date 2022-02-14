@@ -28,6 +28,9 @@
     font-size: 28px;
     line-height: 1.18;
   }
+  @media screen and(max-width: 327px) {
+    font-size: 27px;
+  }
   @media screen and(min-width: 1200px) {
     margin-bottom: 50px;
     font-size: 36px;
