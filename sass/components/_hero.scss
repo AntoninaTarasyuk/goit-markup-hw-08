@@ -1,8 +1,10 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0px;
   text-align: center;
   background-color: $hero-bg-color;
+  @media screen and(max-width: 1199px) {
+    padding: 118px 0px;
+  }
 }
 .hero__name {
   margin-top: 0;
@@ -33,20 +35,29 @@
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
+
   @media screen and(max-width: 576px) {
-    background-image: url(../images/hero-mobile-2x.jpeg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-mobile-1x.jpeg);
     max-width: 480px;
   }
   @media screen and(min-width: 577px) and(max-width: 1199px) {
-    background-image: url(../images/hero-tablet-2x.jpeg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-tablet-1x.jpeg);
     max-width: 768px;
   }
   @media screen and(min-width: 1200px) {
-    background-image: url(../images/hero-desctop-2x.jpeg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-desctop-1x.jpeg);
     max-width: 1600px;
   }
 
@@ -55,15 +66,27 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     @media screen and(max-width: 767px) {
-      background-image: url(../images/hero-mobile-2x.jpeg);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-mobile-2x.jpeg);
       max-width: 480px;
     }
     @media screen and(min-width: 768px) and(max-width: 1199px) {
-      background-image: url(../images/hero-tablet-2x.jpeg);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-tablet-2x.jpeg);
       max-width: 768px;
     }
     @media screen and(min-width: 1200px) {
-      background-image: url(../images/hero-desctop-2x.jpeg);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-desctop-2x.jpeg);
       max-width: 1600px;
     }
   }
