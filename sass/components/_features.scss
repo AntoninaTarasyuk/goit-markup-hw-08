@@ -15,7 +15,7 @@
     }
   }
   @media screen and(min-width: 768px) and(max-width: 1199px) {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
     &:nth-child(2n) {
       margin-left: 30px;
     }
@@ -24,10 +24,9 @@
     }
   }
   @media screen and(min-width: 1200px) {
-    width: calc((100%-30px * 3) / 4);
-
-    &:not(:first-child) {
-      margin-left: 30px;
+    width: calc((100% - 30px * 3) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }
