@@ -28,11 +28,12 @@
 
   transition: color $transition-time $time-function;
 
-  &:focus,
-  &:hover {
-    color: $accent-color;
+  @media screen and(min-width: 1200px) {
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
   }
-
   @media screen and(max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
