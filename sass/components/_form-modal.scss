@@ -72,13 +72,11 @@
 }
 .agreement__lable {
   margin-left: 7px;
+  line-height: 1.17;
+  font-size: 10px;
 
-  @media screen and(max-width: 481px) {
-    font-size: 11px;
-  }
-  @media screen and(max-width: 1999px) {
+  @media screen and(min-width: 480px) {
     font-size: 12px;
-    line-height: 1.17;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;

@@ -1,28 +1,27 @@
 .hero {
-  padding: 200px 0px;
+  padding: 118px 0px;
   text-align: center;
   background-color: $hero-bg-color;
-  @media screen and(max-width: 1199px) {
-    padding: 118px 0px;
+  @media screen and(min-width: 1200px) {
+    padding: 200px 0px;
   }
 }
 .hero__name {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   color: $dark-bg-text-color;
   text-transform: uppercase;
 
-  @media screen and(min-width: 387px) and(max-width: 1199px) {
-    font-size: 26px;
-    line-height: 1.62;
+  @media screen and(min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
   }
   @media screen and(max-width: 386px) {
-    font-size: calc(1.25rem + 6 * (100vw - 320px) / 880);
-    line-height: 1.62;
+    font-size: 6.5vw;
   }
 }
 .hero--overlay {

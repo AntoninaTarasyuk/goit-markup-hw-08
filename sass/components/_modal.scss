@@ -13,7 +13,7 @@
   z-index: 7;
 
   @media screen and (max-width: 479px) {
-    padding: 94px 15px 93px 15px;
+    padding: 90px 15px;
   }
 }
 .backdrop.is-hidden {
@@ -21,13 +21,15 @@
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.6);
+  transform: scale(0.6);
+  @media screen and(min-width: 480px) {
+    transform: translate(-50%, -50%) scale(0.6);
+  }
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  position: relative;
+  width: 100%;
+  transform: scale(1);
   transition: transform $transition-time $time-function;
 
   padding: 40px;
@@ -36,32 +38,26 @@
 
   z-index: 8;
 
-  @media screen and (max-width: 479px) {
-    position: relative;
-  }
-
-  @media screen and (max-width: 479px) {
-    max-width: 452px;
-  }
-  @media screen and(min-width: 480px) and(max-width: 1199px) {
+  @media screen and(min-width: 480px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 452px;
+    transform: translate(-50%, -50%) scale(1);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
     width: 528px;
   }
 }
 .modal__title {
   margin: 0 0 12px 0;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
   text-align: center;
   color: $title-text-color;
 
-  @media screen and (max-width: 1199px) {
-    font-size: 20px;
-    line-height: 1.5;
-  }
   @media screen and (min-width: 1200px) {
-    font-size: 20px;
     line-height: 1.15;
   }
 }

@@ -3,9 +3,6 @@
     display: flex;
     align-items: center;
   }
-  @media screen and(max-width: 1199px) {
-    display: block;
-  }
 }
 .subscribe-form__field {
   @media screen and(max-width: 1199px) {
@@ -14,6 +11,7 @@
   }
 }
 .subscribe-form__input {
+  width: 100%;
   padding: 15px 16px;
   color: $dark-bg-text-color;
   background-color: $footer-bg-color;
@@ -27,14 +25,11 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
+  @media screen and(min-width: 480px) {
+    width: 450px;
+  }
   @media screen and(min-width: 1200px) {
     width: 360px;
     margin-right: 12px;
-  }
-  @media screen and(max-width: 1199px) {
-    width: 450px;
-  }
-  @media screen and(max-width: 479px) {
-    width: 100%;
   }
 }

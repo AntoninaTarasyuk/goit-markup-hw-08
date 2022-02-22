@@ -1,11 +1,7 @@
-.site-nav {
-  display: block;
-}
 .site-nav__list {
   @extend %list;
-  @media screen and(max-width: 767px) {
-    display: inline-block;
-  }
+  display: inline-block;
+
   @media screen and(min-width: 768px) {
     display: inline-flex;
   }
@@ -17,38 +13,31 @@
 }
 .site-nav__link {
   display: block;
-
+  padding: 16px 0px;
   font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: $title-text-color;
   text-decoration: none;
 
   transition: color $transition-time $time-function;
 
+  @media screen and(min-width: 768px) {
+    padding: 32px 0px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
   @media screen and(min-width: 1200px) {
     &:focus,
     &:hover {
       color: $accent-color;
     }
   }
-
-  @media screen and(max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 40px;
-    line-height: 1.18;
-  }
-  @media screen and(min-width: 768px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-size: 14px;
-    line-height: 1.14;
-  }
 }
 .site-nav__link--current {
   position: relative;
   color: $accent-color;
-
   @media screen and(min-width: 768px) {
     &:after {
       content: "";

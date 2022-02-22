@@ -1,15 +1,10 @@
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
 
-  @media screen and(max-width: 1199px) {
-    padding: 60px 0px;
+  @media screen and(min-width: 1200px) {
+    padding: 94px 0px;
   }
 
-  &--features {
-    @media screen and(min-width: 1200px) {
-      padding-bottom: 0;
-    }
-  }
   &--secondary-bg-color {
     background-color: $secondary-bg-color;
   }
@@ -17,17 +12,19 @@
     @media screen and(max-width: 1199px) {
       display: none;
     }
+    @media screen and(min-width: 1200px) {
+      padding-top: 0;
+    }
   }
 }
 .section__title {
   margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
   color: $title-text-color;
   text-align: center;
-  @media screen and(max-width: 1199px) {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.18;
-  }
+
   @media screen and(max-width: 327px) {
     font-size: 27px;
   }
