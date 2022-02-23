@@ -16,6 +16,8 @@
     transition: opacity $transition-time $time-function;
 
     &.is-open {
+      // position: fixed;
+      // overflow: scroll;
       opacity: 1;
       pointer-events: initial;
       display: flex;

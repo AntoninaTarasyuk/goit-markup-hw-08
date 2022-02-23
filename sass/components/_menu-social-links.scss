@@ -27,13 +27,13 @@
 
 .menu-social-links__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 3.75vw;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
   text-decoration: none;
 
-  @media screen and(max-width: 414px) {
-    font-size: 3.75vw;
+  @media screen and(min-width: 415px) {
+    font-size: 18px;
   }
 }
