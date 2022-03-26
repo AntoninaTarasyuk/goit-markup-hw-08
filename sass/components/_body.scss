@@ -9,3 +9,9 @@ img {
   height: auto;
   max-width: 100%;
 }
+body.modal-open {
+  overflow: hidden;
+}
+body.menu-open {
+  overflow: hidden;
+}
