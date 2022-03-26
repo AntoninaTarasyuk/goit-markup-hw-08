@@ -285,10 +285,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-body.menu-open {
-  overflow: hidden;
-}
-
 .section {
   padding: 60px 0px;
 }
@@ -414,6 +410,7 @@ body.menu-open {
 .logo {
   display: inline-block;
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: #2196f3;
@@ -1643,7 +1640,6 @@ body.menu-open {
 }
 
 .menu-button {
-  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
