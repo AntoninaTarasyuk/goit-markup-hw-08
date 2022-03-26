@@ -4,13 +4,15 @@
   background-color: $footer-bg-color;
 }
 .footer__join {
-  @media screen and(max-width: 767px) {
-    margin-top: 60px;
+  margin-top: 60px;
+  @media screen and(min-width: 768px) {
+    margin-top: 0px;
   }
 }
 .footer__subscribe {
-  @media screen and(max-width: 1199px) {
-    margin-top: 60px;
+  margin-top: 60px;
+  @media screen and(min-width: 1200px) {
+    margin-top: 0px;
   }
 }
 .footer__title {

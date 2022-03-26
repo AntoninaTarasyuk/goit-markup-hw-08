@@ -20,13 +20,13 @@
 .section__title {
   margin-top: 0;
   margin-bottom: 30px;
-  font-size: 28px;
+  font-size: 27px;
   line-height: 1.18;
   color: $title-text-color;
   text-align: center;
 
-  @media screen and(max-width: 327px) {
-    font-size: 27px;
+  @media screen and(min-width: 328px) {
+    font-size: 28px;
   }
   @media screen and(min-width: 1200px) {
     margin-bottom: 50px;
