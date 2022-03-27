@@ -1370,11 +1370,13 @@ body.menu-open ~ .menu-container {
     width: 452px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
+    margin-top: 210px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    margin-top: 220px;
   }
 }
 
