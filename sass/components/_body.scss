@@ -15,3 +15,6 @@ body.modal-open {
 body.menu-open {
   overflow: hidden;
 }
+body.menu-open ~ .menu-container {
+  overflow-y: scroll;
+}

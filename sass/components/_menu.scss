@@ -1,5 +1,5 @@
 // .menu-conteiner позиционируется относительно .header
-.menu-conteiner {
+.menu-container {
   padding: 48px 20px 48px 40px;
   background-color: $primary-bg-color;
 
@@ -22,7 +22,6 @@
 
       opacity: 1;
       pointer-events: initial;
-      overflow-y: scroll;
 
       transition: opacity $transition-time $time-function;
     }
@@ -41,7 +40,6 @@
   }
 }
 .menu-button {
-  // position: relative;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -50,7 +48,7 @@
 
   z-index: 2;
 
-  transition: color $transition-time $time-function;
+  transition: fill $transition-time $time-function;
 
   &:hover,
   &:focus {
