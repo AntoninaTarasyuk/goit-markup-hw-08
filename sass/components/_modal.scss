@@ -12,9 +12,10 @@
 
   z-index: 7;
 
-  padding: 90px 15px;
+  padding: 93px 15px;
   @media screen and (min-width: 480px) {
     padding: 0;
+    padding-top: 93px;
   }
 }
 .backdrop.is-hidden {
@@ -24,6 +25,9 @@
 .backdrop.is-hidden .modal {
   transform: scale(0.6);
   @media screen and(min-width: 480px) {
+    transform: translate(-50%, 0) scale(0.6);
+  }
+  @media screen and(min-width: 1200px) {
     transform: translate(-50%, -50%) scale(0.6);
   }
 }
@@ -41,15 +45,14 @@
 
   @media screen and(min-width: 480px) {
     position: absolute;
-    top: 50%;
-    left: 50%;
     width: 452px;
-    transform: translate(-50%, -50%) scale(1);
-    margin-top: 210px;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1);
   }
   @media screen and(min-width: 1200px) {
     width: 528px;
-    margin-top: 220px;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 .modal__title {
